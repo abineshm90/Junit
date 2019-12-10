@@ -7,15 +7,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.interactions.Actions;
 
 import junit.framework.Assert;
 
 public class DemoOne {
 	static WebDriver driver;
+	static Actions a;
 @AfterClass
 public static void close() {
-	driver.quit();
+	driver.close();
 }
 	
 @BeforeClass
@@ -32,7 +33,7 @@ public static  void launchBrowser() {
 public void tc1() {
 	
 	WebElement user = driver.findElement(By.id("email"));
-	user.sendKeys("abi");
+	user.sendKeys("abul");
 	String s = user.getAttribute("value");
 	System.out.println(s);
 	Assert.assertEquals("abinesh",s);
