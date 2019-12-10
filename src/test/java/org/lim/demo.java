@@ -25,6 +25,7 @@ public class demo {
 	public static void launchBrowser() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Greens-12\\eclipse-workspace\\Kiruba\\AbiJUnit\\driver\\chromedriver.exe");
 		 driver = new ChromeDriver();
+		 driver.manage().window().maximize();
 		 driver.get("https://www.facebook.com/");
 			
 	}
