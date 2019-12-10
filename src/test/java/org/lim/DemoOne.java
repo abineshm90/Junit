@@ -8,12 +8,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+<<<<<<< HEAD
+import org.openqa.selenium.support.ui.Select;
+=======
+>>>>>>> 57d62f4425b6e44646bfcc7e017db03fe1c8ff58
 
 import junit.framework.Assert;
 
 public class DemoOne {
 	static WebDriver driver;
-	static Actions a;
+static Actions a;
+static Select a;
+static Robot r;
 @AfterClass
 public static void close() {
 	driver.close();
