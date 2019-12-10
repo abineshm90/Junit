@@ -7,12 +7,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import junit.framework.Assert;
 
 public class DemoOne {
 	static WebDriver driver;
+	static Select a;
+	static Actions s;
 @AfterClass
 public static void close() {
 	driver.quit();
