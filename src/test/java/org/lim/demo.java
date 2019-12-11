@@ -12,9 +12,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class demo {
-	static WebDriver driver;
+	static WebDriver driver;	
+	static Select s;
+	static Actions a;
 	static Robot r; 
 	@AfterClass
 	
@@ -27,21 +31,10 @@ public class demo {
 	public static void launchBrowser() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Greens-12\\eclipse-workspace\\Kiruba\\AbiJUnit\\driver\\chromedriver.exe");
 		 driver = new ChromeDriver();
-		 driver.manage().window().maximize();
 		 driver.get("https://www.facebook.com/");
+		 driver.manage().window().maximize();
 			
-	}
 	
-	@After
-	public void endTime() {
-		Date d = new Date();
-		System.out.println(d);
-	}
-	
-	@Before
-	public void startTime() {
-		Date d = new Date();
-		System.out.println(d);
 	}
 	
 	@Test
