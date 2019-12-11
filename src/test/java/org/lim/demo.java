@@ -1,5 +1,6 @@
 package org.lim;
 
+import java.awt.Robot;
 import java.util.Date;
 
 import org.junit.After;
@@ -14,10 +15,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class demo {
 	static WebDriver driver;
+	static Robot r; 
 	@AfterClass
 	
 	public static void closeBroswer() {
-		driver.quit();
+		driver.close();
 
 	}
 	
