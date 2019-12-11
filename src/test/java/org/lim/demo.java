@@ -1,5 +1,6 @@
 package org.lim;
 
+import java.awt.Robot;
 import java.util.Date;
 
 import org.junit.After;
@@ -15,10 +16,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class demo {
-	static WebDriver driver;
-	
+	static WebDriver driver;	
 	static Select s;
 	static Actions a;
+	static Robot r; 
 	@AfterClass
 	
 	public static void closeBroswer() {
